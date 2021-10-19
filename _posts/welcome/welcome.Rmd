@@ -22,5 +22,36 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+As part of the senior project, I had create a blog. There are many different tools that you could use to create a blog, but I chose distill package in R to create my blog. I Would like to show how I created this blog using distill package in R with github.
 
+First, open R studio and install distill package. 
 
+`install.packages("distill")`
+
+Next, go to github.com and create new repository. 
+
+![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/start.png)
+
+After you create your repository, copy the URL of your repository and open R Studio. In R Studio, create a new project. When creating a new project, choose version control and choose git options.
+
+![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/1.png)
+
+![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/2.png)
+Paste the URL of your repository and select the directory.
+![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/3.png)
+
+After creating a new project, run the following command to create a blog using distill package.
+`distill::create_blog(dit = getwd(), title = "Your Blog Name")`
+dir command let you choose where you want to create a blog. in this case, I'm creating a blog file to my current working directory and that is why I'm using getwd(). You can change the name of your blog in *title*.
+
+After you run the command and the blog files are created, you need to restart the R Studio.
+
+After you restart your R studio, you can find a *Build* tab on your right top corner of R Studio. Click Build tab and click Build Website.
+![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/4.png)
+
+Now, push everything to github. After you push it to github, go to your github repositary and click *Settings*
+![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/5.png)
+Under settings, go to pages. Change None to master and root to docs and save.
+![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/6.png)
+
+a

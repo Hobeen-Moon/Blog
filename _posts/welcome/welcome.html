@@ -1482,6 +1482,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<p>As part of the senior project, I had create a blog. There are many different tools that you could use to create a blog, but I chose distill package in R to create my blog. I Would like to show how I created this blog using distill package in R with github.</p>
+<p>First, open R studio and install distill package.</p>
+<p><code>install.packages("distill")</code></p>
+<p>Next, go to github.com and create new repository.</p>
+<p><img src="C:/Users/qlekr/Desktop/SCHOOL/2021%20Fall/Senior%20Project/start.png" /></p>
+<p>After you create your repository, copy the URL of your repository and open R Studio. In R Studio, create a new project. When creating a new project, choose version control and choose git options.</p>
+<p><img src="C:/Users/qlekr/Desktop/SCHOOL/2021%20Fall/Senior%20Project/1.png" /></p>
+<p><img src="C:/Users/qlekr/Desktop/SCHOOL/2021%20Fall/Senior%20Project/2.png" /> Paste the URL of your repository and select the directory. <img src="C:/Users/qlekr/Desktop/SCHOOL/2021%20Fall/Senior%20Project/3.png" /></p>
+<p>After creating a new project, run the following command to create a blog using distill package. <code>distill::create_blog(dit = getwd(), title = "Your Blog Name")</code> dir command let you choose where you want to create a blog. in this case, I’m creating a blog file to my current working directory and that is why I’m using getwd(). You can change the name of your blog in <em>title</em>.</p>
+<p>After you run the command and the blog files are created, you need to restart the R Studio.</p>
+<p>After you restart your R studio, you can find a <em>Build</em> tab on your right top corner of R Studio. Click Build tab and click Build Website. <img src="C:/Users/qlekr/Desktop/SCHOOL/2021%20Fall/Senior%20Project/4.png" /></p>
+<p>Now, push everything to github. After you push it to github, go to your github repositary and click <em>Settings</em> <img src="C:/Users/qlekr/Desktop/SCHOOL/2021%20Fall/Senior%20Project/5.png" /> Under settings, go to pages. Change None to master and root to docs and save. <img src="C:/Users/qlekr/Desktop/SCHOOL/2021%20Fall/Senior%20Project/6.png" /></p>
+<p>a</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
