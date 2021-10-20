@@ -1,8 +1,7 @@
 ---
-title: "Welcome to My Very First Blog"
+title: "How to make blog using distill package"
 description: |
-  Welcome to our new blog, My Very First Blog. We hope you enjoy 
-  reading what we have to say!
+  Welcome to my first blog. I hope you enjoy time here. 
 author:
   - name: Hobeen Moon 
     url: https://github.com/Hobeen-Moon/Blog.git
@@ -41,7 +40,7 @@ Paste the URL of your repository and select the directory.
 ![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/3.png)
 
 After creating a new project, run the following command to create a blog using distill package.
-`distill::create_blog(dit = getwd(), title = "Your Blog Name")`
+`distill::create_blog(dir = getwd(), title = "Your Blog Name")`
 dir command let you choose where you want to create a blog. in this case, I'm creating a blog file to my current working directory and that is why I'm using getwd(). You can change the name of your blog in *title*.
 
 After you run the command and the blog files are created, you need to restart the R Studio.
@@ -54,4 +53,13 @@ Now, push everything to github. After you push it to github, go to your github r
 Under settings, go to pages. Change None to master and root to docs and save.
 ![](C:/Users/qlekr/Desktop/SCHOOL/2021 Fall/Senior Project/6.png)
 
-a
+To create a new blog post, run the following command in your R Studio.
+`distill::create_post("creating a blog")`
+You will see a Rmd file with the name you picked. Distill uses Rmd file and if you want to format it, there are many documentations about Rmd file. I recommend you to Google them and make your blog pretty. 
+
+Once you finish editing your blog, knit Rmd file. GO to Build tab and click Build Website again. Then push everything to github. 
+
+Now you can see your blog post if you go to your website's URL.
+
+You have to click knit and Build Website whenever you create a new post. You can change the theme of your Rmd file as well.
+For more information about *distill* package, please visit [Distill Package](https://rstudio.github.io/distill)
